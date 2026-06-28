@@ -1,21 +1,21 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import ws from "ws";
 
-const supabaseUrl = process.env.SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-if (!supabaseUrl || !supabaseServiceKey) {
-  throw new Error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set");
-}
-
-export const supabase = createClient(supabaseUrl, supabaseServiceKey, {
-  auth: { persistSession: false },
-  realtime: { transport: ws } as any,
-});
+export const supabase: SupabaseClient | null =
+  supabaseUrl && supabaseServiceKey
+    ? createClient(supabaseUrl, supabaseServiceKey, {
+        auth: { persistSession: false },
+        realtime: { transport: ws } as any,
+      })
+    : null;
 
 export const BUCKET = "note-attachments";
 
 export async function ensureBucket() {
+  if (!supabase) return;
   const { data: buckets } = await supabase.storage.listBuckets();
   const exists = buckets?.some((b) => b.name === BUCKET);
   if (!exists) {
@@ -34,6 +34,7 @@ export async function uploadFile(
   folder: string,
   filename: string,
 ): Promise<string> {
+  if (!supabase) throw new Error("File uploads are unavailable: Supabase is not configured");
   const safe = filename.replace(/[^a-zA-Z0-9._-]/g, "_");
   const path = `${folder}/${Date.now()}-${safe}`;
   const { error } = await supabase.storage.from(BUCKET).upload(path, buffer, {
@@ -46,6 +47,7 @@ export async function uploadFile(
 }
 
 export async function deleteFile(publicUrl: string) {
+  if (!supabase) return;
   try {
     const url = new URL(publicUrl);
     const parts = url.pathname.split(`/${BUCKET}/`);
