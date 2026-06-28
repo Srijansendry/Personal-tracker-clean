@@ -1,0 +1,218 @@
+You are an award-winning frontend engineer from Apple, Stripe, Linear, Framer, Motion.site and Vercel.
+
+The current website is functionally correct but visually unacceptable.
+
+Delete every default dashboard UI.
+
+Do NOT create a traditional admin dashboard.
+
+Do NOT create generic cards.
+
+Do NOT create bootstrap-like layouts.
+
+Do NOT create standard productivity app designs.
+
+My goal is to build the most beautiful personal operating system ever created for a student preparing for FAANG.
+
+The website must feel like:
+
+Motion.site
+Linear
+Framer
+Apple Vision Pro website
+Stripe Sessions page
+Modern Awwwards websites
+
+The feeling should be:
+
+futuristic
+premium
+motivational
+alive
+immersive
+magical
+
+Use:
+
+React
+Framer Motion
+Three.js
+React Three Fiber
+GSAP
+Lenis smooth scrolling
+
+Design Language:
+
+Primary Colors:
+
+Pastel Pink #FFB6C1
+Lavender #E6E6FA
+Soft Purple #C8A2C8
+White #FFFFFF
+
+Background:
+
+Create a floating 3D universe.
+
+Add:
+
+floating glassmorphism spheres
+animated particles
+soft gradients
+moving light rays
+mouse reactive backgrounds
+depth layers
+
+The background should constantly move subtly.
+
+Never appear static.
+
+Landing Section:
+
+Create a full-screen hero section.
+
+Display:
+
+"Welcome Back Srijan"
+
+Under it:
+
+"Building the Top 0.1% Engineer Journey"
+
+Show:
+
+Current Streak
+Today's Focus
+Remaining Tasks
+Monthly Progress
+
+All elements should animate into view.
+
+Mouse Effects:
+
+Create premium mouse interactions.
+
+When moving mouse:
+
+cards tilt
+particles move
+lights follow cursor
+objects react
+
+Make it feel alive.
+
+Scrolling Experience:
+
+Implement:
+
+parallax scrolling
+section reveal animations
+staggered text animations
+depth transitions
+
+Every section should tell a story.
+
+Dashboard Sections:
+
+Transform every section into a premium experience.
+
+Instead of cards:
+
+Create floating panels.
+
+Panels should:
+
+hover
+rotate
+glow
+respond to cursor
+
+Use 3D depth.
+
+Statistics:
+
+Never use ordinary charts.
+
+Replace:
+
+pie charts
+boring bar charts
+
+With:
+
+animated radial progress rings
+liquid progress indicators
+3D progress spheres
+animated timelines
+
+Gamification:
+
+Create a complete RPG system.
+
+Add:
+
+Levels
+XP
+Streaks
+Rank progression
+
+Ranks:
+
+Beginner
+Explorer
+Builder
+Engineer
+Architect
+FAANG Candidate
+Top 1%
+Top 0.1%
+
+Display progress visually.
+
+Animations:
+
+Use Framer Motion everywhere.
+
+Every element must have:
+
+hover state
+entrance animation
+exit animation
+micro interaction
+
+Nothing should instantly appear.
+
+Performance:
+
+Maintain:
+
+60fps
+responsive design
+mobile support
+lazy loading
+
+The website should look like a startup raised $10M to build it.
+
+Focus 80% on frontend experience.
+
+Features already exist.
+
+Do not redesign functionality.
+
+Redesign emotion, interaction, animation, immersion and visual quality.
+
+My assessment
+
+Don't spend time adding more trackers right now.
+
+Your current site is only about 15–20% of your vision.
+
+First get:
+
+Premium UI
+3D interactions
+Motion
+Visual hierarchy
+Emotional design
+
+Then add DSA tracking, coaching tracking, expenses, C

@@ -1,0 +1,26 @@
+You are a full-stack web developer enhancing my personal learning platform. I want a structured note and problem revision system that records LeetCode and web development lessons with timestamps and attached assets.
+LeetCode Problem Tracking:
+Whenever I solve a LeetCode problem in class, I should be able to record it by inputting the problem number (e.g., 791).
+I want to upload a photo of my handwritten notes and attach it to that problem record.
+I also want to paste or screenshot my final code solution from LeetCode into the same record.
+Each record must store the date, problem number, problem title, my handwritten notes (image), and code solution (text or image).
+I should be able to search by problem number (e.g., "791") and quickly see all details (notes, code, date).
+Web Development Notes:
+For each web development class lesson, I want to record the topic (e.g., "DOM Manipulation") and attach both my notes (photo or PDF) and the code I wrote.
+Create a topic-wise archive: When I click a topic, I see all my notes, all code snippets, and any attached PDFs.
+Each entry should be tied to a date, so I see when I learned each topic.
+Database Integration (using Supabase):
+Create a table that stores all LeetCode problem records: problem number, title, date solved, notes image, code (text or image).
+Create a separate table for web development notes: topic, date, notes image/PDF, code snippets.
+Allow me to upload files (photos or PDFs), and securely store them in Supabase.
+Search & Revision:
+Add a search feature so I can type a problem number (e.g., "791") or a topic (e.g., "DOM Manipulation") and instantly see that note set.
+Make each search result clickable, so I can see a full detailed record, including notes, code, and date.
+UX/UI Flow:
+Create a dedicated "Revision" page where I can filter by date or topic.
+Each record should have a "View Details" button that opens a modal or detailed page showing the notes, code, and date of learning.
+Keep the interface sleek and intuitive, so I can easily upload, view, and search for notes.
+Admin Control:
+If I want, I should be able to edit or delete any record (like if I uploaded the wrong problem).
+Make sure I can tag or categorize topics (e.g., "DOM", "Data Structures") so that revisions are organized.
+Ensure that all uploads, problem records, and topics are stored securely in Supabase. Keep the user flow frictionless, so I spend minimal time uploading and maximum time revising. Make the system feel like a personal archive, where all my problem-solving growth is neatly organized.
